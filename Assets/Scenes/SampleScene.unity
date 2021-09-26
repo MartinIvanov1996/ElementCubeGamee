@@ -2928,6 +2928,9 @@ MonoBehaviour:
   airButton: {fileID: 841925648}
   waterButton: {fileID: 1948416215}
   earthButton: {fileID: 628940443}
+  fireAttack: {fileID: 1036250362697595144, guid: 53c8cdb22a8e93b4fbe0cf6138f2bca5, type: 3}
+  waterAttack: {fileID: 7081573350475096648, guid: f6150f14ccbf4b943bacbabb72345395, type: 3}
+  windAttack: {fileID: 841302546536941311, guid: 1aeb69cb803009641afd3e43e9f874df, type: 3}
 --- !u!50 &1820625953
 Rigidbody2D:
   serializedVersion: 4
