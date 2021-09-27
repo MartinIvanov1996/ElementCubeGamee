@@ -5,7 +5,6 @@ using UnityEngine;
 public class StaticEnemy : MonoBehaviour
 {
     [SerializeField] float fireRate = 1;
-    [SerializeField] float fireSpeed = 20f;
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject bullet;
 

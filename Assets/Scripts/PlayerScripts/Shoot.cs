@@ -26,8 +26,12 @@ public class Shoot : MonoBehaviour
     //and I made this because the fire object stayed fixed when played even if the cube is moving.
     //i use it in the update
     GameObject fireAttackTemp = null;
+    GameObject waterAttackTemp = null;
+    GameObject windAttackTemp = null;
     [SerializeField] GameObject waterAttack;
     [SerializeField] GameObject windAttack;
+
+    private float timeUntilDestroy = 2f;
 
     private void Start()
     {
@@ -82,16 +86,18 @@ public class Shoot : MonoBehaviour
     private void AttackFire()
     {
         fireAttackTemp = Instantiate(fireAttack, firePoint.position, firePoint.rotation);
-        
+        Destroy(fireAttackTemp, timeUntilDestroy);
     }
 
     private void AttackWater()
     {
-        Instantiate(waterAttack, waterPoint.position, waterPoint.rotation);
+        waterAttackTemp = Instantiate(waterAttack, waterPoint.position, waterPoint.rotation);
+        Destroy(waterAttackTemp, timeUntilDestroy);
     }
     private void AttackWind()
     {
-        Instantiate(windAttack, airPoint.position, airPoint.rotation);
+        windAttackTemp = Instantiate(windAttack, airPoint.position, airPoint.rotation);
+        Destroy(windAttackTemp, timeUntilDestroy);
     }
     #endregion
 }
