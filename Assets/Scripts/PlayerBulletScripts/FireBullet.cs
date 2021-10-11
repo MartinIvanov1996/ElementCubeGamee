@@ -6,6 +6,7 @@ public class FireBullet : MonoBehaviour
 {
     [SerializeField] Rigidbody2D fireBullet;
     [SerializeField] float timeToDestroy = 0.5f;
+    [SerializeField] int damage = 10;
 
     const float speed = 0f;
 
@@ -19,6 +20,11 @@ public class FireBullet : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Debug.Log(other.gameObject.name);
+            EnemyHealth health = other.GetComponent<EnemyHealth>();
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+            }
         }
         Destroy(gameObject, timeToDestroy);
     }

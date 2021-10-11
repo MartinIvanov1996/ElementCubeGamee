@@ -16,10 +16,10 @@ public class EarthBullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(gameObject);
-        HealthScript heroHealth = other.GetComponent<HealthScript>();
-        if(heroHealth != null && other.tag != "Air")
+        EnemyHealth health = other.GetComponent<EnemyHealth>();
+        if(health != null)
         {
-            heroHealth.TakeDamage(damage);
+            health.TakeDamage(damage);
         }
     }
 }
