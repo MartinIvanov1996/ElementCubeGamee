@@ -58,7 +58,6 @@ public class Shoot : MonoBehaviour
     //and destroy the prefabs when they disappear.
 
     //click this to see the code
-    #region
     private void AttackFire()
     {
         fireAttackTemp = Instantiate(fireAttack, firePoint.position, firePoint.rotation);
@@ -75,5 +74,4 @@ public class Shoot : MonoBehaviour
         windAttackTemp = Instantiate(windAttack, airPoint.position, airPoint.rotation);
         Destroy(windAttackTemp, timeUntilDestroy);
     }
-    #endregion
 }

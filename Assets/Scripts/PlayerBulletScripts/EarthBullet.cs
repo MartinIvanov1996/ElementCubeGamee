@@ -16,7 +16,7 @@ public class EarthBullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(gameObject);
-        HeroHealth heroHealth = other.GetComponent<HeroHealth>();
+        HealthScript heroHealth = other.GetComponent<HealthScript>();
         if(heroHealth != null && other.tag != "Air")
         {
             heroHealth.TakeDamage(damage);
