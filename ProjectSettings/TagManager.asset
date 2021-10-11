@@ -8,6 +8,7 @@ TagManager:
   - Air
   - Water
   - Earth
+  - Enemy
   layers:
   - Default
   - TransparentFX
