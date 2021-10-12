@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 9126140084460134744}
   m_Layer: 0
   m_Name: WaterBubble
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   fireBullet: {fileID: -495308490760926378}
+  damage: 10
 --- !u!50 &-495308490760926378
 Rigidbody2D:
   serializedVersion: 4

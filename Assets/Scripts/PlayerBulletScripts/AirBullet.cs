@@ -15,14 +15,10 @@ public class AirBullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Enemy")
+        EnemyHealth health = other.GetComponent<EnemyHealth>();
+        if (health != null && other.gameObject.tag == "Earth")
         {
-            Debug.Log(other.gameObject.name);
-            EnemyHealth health = other.GetComponent<EnemyHealth>();
-            if (health != null)
-            {
-                health.TakeDamage(damage);
-            }
+            health.TakeDamage(damage);
         }
         Destroy(gameObject);
     }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1493966163244465750}
   m_Layer: 0
   m_Name: FireFlame
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireBullet: {fileID: -1116660973726728754}
   timeToDestroy: 0.5
+  damage: 10
 --- !u!1001 &5871349321673261898
 PrefabInstance:
   m_ObjectHideFlags: 0
