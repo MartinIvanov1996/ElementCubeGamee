@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5195619071495848224}
   - component: {fileID: 5717787945160405062}
   - component: {fileID: 3150834653536077446}
-  - component: {fileID: 1348626594509145012}
   m_Layer: 0
   m_Name: WindTornado
   m_TagString: Untagged
@@ -70,6 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   airBullet: {fileID: 5195619071495848224}
+  damage: 10
 --- !u!61 &3150834653536077446
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -83,7 +83,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.42400873, y: -0.06424381}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -94,22 +94,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2141459, y: 1.1113555}
   m_EdgeRadius: 0
---- !u!114 &1348626594509145012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841302546536941311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344f465eca372004399fd8533cfe7702, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  fireBullet: {fileID: -495308490760926378, guid: f6150f14ccbf4b943bacbabb72345395, type: 3}
 --- !u!1 &5270444200732923510
 GameObject:
   m_ObjectHideFlags: 0
