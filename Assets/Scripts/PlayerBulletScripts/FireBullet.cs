@@ -22,6 +22,13 @@ public class FireBullet : MonoBehaviour
         {
             health.TakeDamage(damage);
         }
+
+        HeroHealth heroHealth = other.GetComponent<HeroHealth>();
+        if (heroHealth != null && other.gameObject.tag == "Player")
+        {
+            heroHealth.TakeDamage(damage);
+        }
+
         Destroy(gameObject, timeToDestroy);
     }
 }
